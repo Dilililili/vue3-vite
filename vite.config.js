@@ -12,7 +12,7 @@ import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 // import {visualizer} from "rollup-plugin-visualizer"
 
 // 代码压缩 nginx需要开始gzip
-import viteCompression from 'vite-plugin-compression'
+// import viteCompression from 'vite-plugin-compression'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,7 +20,7 @@ export default defineConfig({
     vue(),
     VueJsx(),
     // visualizer(),
-    viteCompression(),
+    // viteCompression(),
     AutoImport({
       //包含的文件
       include: [
