@@ -32,7 +32,7 @@ export default defineConfig({
       //auto-import.d.ts 使用ts建议开启
       dts: false,
       // vue vue-router vuex中的方法自动导入
-      imports: ['vue', 'vue-router', 'pinia'],
+      imports: ['vue', 'vue-router', 'pinia']
     }),
     Components({
       dts: false, //components.d.ts会自动生成 默认生成在src/
@@ -50,6 +50,9 @@ export default defineConfig({
     alias: {
       //src目录的配置
       '@': path.resolve(__dirname, 'src'),
+      '@router': path.resolve(__dirname, 'src/router'),
+      '@view': path.resolve(__dirname, 'src/view'),
+      '@store': path.resolve(__dirname, 'src/store'),
     },
     // 忽略后缀名的配置选项, 添加 .vue 选项时要记得原本默认忽略的选项也要手动写入
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
