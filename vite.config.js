@@ -21,7 +21,7 @@ export default defineConfig({
     VueJsx(),
     visualizer(),
     viteCompression({
-      deleteOriginFile: true,
+      deleteOriginFile: false,
     }),
     AutoImport({
       //包含的文件
