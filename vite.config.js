@@ -9,20 +9,18 @@ import Components from 'unplugin-vue-components/vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 
 // 包依赖分析可视化
-import {visualizer} from "rollup-plugin-visualizer"
+// import {visualizer} from "rollup-plugin-visualizer"
 
 // 代码压缩 nginx需要开始gzip
-import viteCompression from 'vite-plugin-compression';
+import viteCompression from 'vite-plugin-compression'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     VueJsx(),
-    visualizer(),
-    viteCompression({
-      deleteOriginFile: false,
-    }),
+    // visualizer(),
+    viteCompression(),
     AutoImport({
       //包含的文件
       include: [
